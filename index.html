@@ -47,6 +47,8 @@
 		
 		var mySwiper = new Swiper('.swiper-container', {
 	autoplay: 5000,//可选选项，自动滑动
+	loop:true,
+	autoplayDisableOnInteraction : false,
 	initialSlide :1,
 	mousewheelControl : true,
 	keyboardControl : true,
@@ -58,6 +60,13 @@
     
     // 如果需要滚动条
     scrollbar: '.swiper-scrollbar',
+    effect : 'cube',
+cube: {
+  slideShadows: true,
+  shadow: true,
+  shadowOffset: 100,
+  shadowScale: 0.6
+}
 	
 })
 		
