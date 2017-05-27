@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/tong.css" />
+		<link rel="stylesheet" type="text/css" href="css/shouji.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="top">
+			<span class="text-center">微信</span>
+			<span class="glyphicon glyphicon-plus jia pull-right"></span>
+			
+			
+		</div>
+		<div class="con">
+			
+		</div>
+		<div class="footer">
+			
+			<div class="ys"><span class="glyphicon glyphicon-comment"></span>
+				<div>微信</div></div>
+			<div><span class="glyphicon glyphicon-globe"></span>
+				<div>通讯录</div>
+			</div>
+			<div><span class="glyphicon glyphicon-align-left"></span>
+				<div>发现</div>
+			</div>
+			<div><span class="glyphicon glyphicon-user"></span>
+				<div>我</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js">
+			
+		</script>
+		<script type="text/javascript">
+			$(".footer>div").click(function(){
+				var a=$(this).index();
+				$(".footer>div").eq(a).addClass("ys").siblings().removeClass("ys")
+			})
+		</script>
+	</body>
+</html>
